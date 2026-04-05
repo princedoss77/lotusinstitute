@@ -768,6 +768,24 @@ a:hover {
   color: var(--accent-hover);
 }
 
+.contact-card-instagram .contact-value {
+  font-size: 1.15rem;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #e6683c;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .contact-card-instagram .contact-value {
+    color: transparent;
+  }
+}
+
+.contact-card-instagram:hover .contact-value {
+  filter: brightness(1.1);
+}
+
 .contact-label {
   display: block;
   font-size: 0.75rem;
@@ -833,6 +851,22 @@ a:hover {
   letter-spacing: 0.02em;
   max-width: 20rem;
   line-height: 1.35;
+}
+
+.footer-social {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+
+.footer-social a {
+  color: var(--text-muted);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #e6683c;
+  text-decoration: underline;
 }
 
 .footer-dev {
