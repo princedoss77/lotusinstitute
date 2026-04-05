@@ -1,0 +1,7 @@
+# Cloudflare Pages — deploy from this folder:
+#   npx wrangler pages deploy . --project-name=lotus-civil-software-training
+# Or in dashboard: Connect Git / Upload, build command empty, output directory = / (root)
+
+name = "lotus-civil-software-training"
+compatibility_date = "2026-04-01"
+pages_build_output_dir = "."
