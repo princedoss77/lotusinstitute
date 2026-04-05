@@ -1,7 +1,8 @@
-# Cloudflare Pages — deploy from this folder:
-#   npx wrangler pages deploy . --project-name=lotus-civil-software-training
-# Or in dashboard: Connect Git / Upload, build command empty, output directory = / (root)
+# Workers: `npx wrangler deploy` serves files from ./public as static assets.
+# Cloudflare Pages (Git): set “Build output directory” to `public` (no build command).
 
-name = "lotus-civil-software-training"
+name = "lotusinstitute"
 compatibility_date = "2026-04-01"
-pages_build_output_dir = "."
+
+[assets]
+directory = "public"
